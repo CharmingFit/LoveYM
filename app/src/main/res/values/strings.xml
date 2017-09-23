@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoveYM</string>
+    <string name="Customers_button"> Customers</string>
+    <string name="Orders_button"> Orders</string>
+    <string name="Inventroy_button"> Inventory</string>
+    <string name="Management_button"> Management</string>
+    <string name="Searcher_hint">Search...</string>
+    <string name="New_customer_button">New Customer</string>
+    <string name="title_activity_inventory_all">InventoryAll</string>
+</resources>

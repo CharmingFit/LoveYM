@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_item_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.steven.loveym.ItemNew">
+
+    <com.example.steven.loveym.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"/>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textSize="@dimen/item_font_size"
+                />
+            <EditText
+                android:id="@+id/name_new_item"
+                android:layout_height="wrap_content"
+                />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Category :"
+                android:textSize="@dimen/item_font_size"
+                />
+
+
+            <Spinner
+                android:id="@+id/category_new_item"
+                android:entries="@array/item_categories"
+                android:layout_width="wrap_content"
+                android:spinnerMode="dialog"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="单品重量 (g) :"
+                android:textSize="@dimen/item_font_size"
+                />
+            <EditText
+                android:id="@+id/weight_new_item"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="单品售价 ￥:"
+                android:textSize="@dimen/item_font_size"
+                />
+            <EditText
+                android:id="@+id/price_new_item"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_below="@id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memo :"
+            android:textSize="@dimen/item_font_size"
+            />
+
+        <EditText
+            android:id="@+id/memo_new_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_new_item_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Confirm"
+        android:enabled="true"
+
+
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

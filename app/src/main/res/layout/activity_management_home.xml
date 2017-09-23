@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.example.steven.loveym.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/delivery_company_button"
+        android:layout_width="@dimen/button_weight"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="快递公司管管理"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textAllCaps="false"
+        android:textSize="@dimen/button_font_size"
+        />
+
+    <Button
+        android:id="@+id/Orders_button"
+        android:layout_width="@dimen/button_weight"
+        android:layout_height="wrap_content"
+        android:text="可添加"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/button_font_size"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/Inventory_button"
+        android:layout_width="@dimen/button_weight"
+        android:layout_height="wrap_content"
+        android:text="可添加"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/button_font_size"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/Managemnt_button"
+        android:layout_width="@dimen/button_weight"
+        android:layout_height="wrap_content"
+        android:text="可添加"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/button_font_size"
+        android:textAllCaps="false"
+        />
+
+
+</LinearLayout>

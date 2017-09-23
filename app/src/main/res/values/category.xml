@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_categories">
+        <item>奶粉</item>
+        <item>保健品</item>
+        <item>妇婴类</item>
+        <item>化妆品</item>
+        <item>其他</item>
+    </string-array>
+
+
+
+    <string-array name="cost_categories">
+        <item>单价</item>
+        <item>总价</item>
+    </string-array>
+
+    <string-array name="paid_categories">
+        <item>全部</item>
+        <item>已付款</item>
+        <item>未付款</item>
+    </string-array>
+
+    <string-array name="delivery_categories">
+        <item>全部</item>
+        <item>已发货</item>
+        <item>未发货</item>
+    </string-array>
+
+    <string-array name="delivery_company">
+        <item>重庆中环</item>
+        <item>澳通</item>
+        <item>澳游</item>
+    </string-array>
+
+
+
+
+
+
+
+
+
+</resources>

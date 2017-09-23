@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order_processing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.steven.loveym.OrderProcessing">
+
+    <com.example.steven.loveym.TitleLayoutSearcher
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Switch
+        android:id="@+id/filter_switch"
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="筛选开启"
+        android:textOff="筛选关闭"/>
+
+
+    <Spinner
+        android:id="@+id/paid_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/filter_switch"
+        android:layout_below="@id/title"
+        android:spinnerMode="dropdown"
+        android:entries="@array/paid_categories"
+        />
+
+
+    <Spinner
+        android:id="@+id/delivery_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/paid_spinner"
+        android:layout_below="@id/title"
+        android:spinnerMode="dropdown"
+        android:entries="@array/delivery_categories"
+        />
+
+
+
+    <ExpandableListView
+        android:id="@+id/E_Listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filter_switch"/>
+
+
+
+</RelativeLayout>

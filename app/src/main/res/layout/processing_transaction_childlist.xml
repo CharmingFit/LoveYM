@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/customer_name"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Telephone: "
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/customer_tel"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/customer_address"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Memo: "
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/order_memo"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+    <ListView
+        android:id="@+id/transaction_info_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <Button
+                android:id="@+id/button_delivery_number"
+                android:layout_height="wrap_content"
+                android:text="运单号: "
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/delivery_number"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radio_group_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/transaction_undelivery_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未发货"/>
+
+        <RadioButton
+            android:id="@+id/transaction_delivery_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已发货"/>
+
+    </RadioGroup>
+
+
+
+
+
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/transaction_unpaid_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未付款"/>
+
+        <RadioButton
+            android:id="@+id/transaction_paid_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已付款"/>
+
+    </RadioGroup>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/total_amountV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:textSize="@dimen/item_font_size"
+            />
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/total_amountV"
+            />
+
+        <TextView
+            android:id="@+id/total_weightV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight:"
+            android:textSize="@dimen/item_font_size"
+            android:layout_toRightOf="@id/total_amount"
+            />
+
+        <TextView
+            android:id="@+id/total_weight"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/total_weightV"
+            />
+
+
+        <TextView
+            android:id="@+id/total_costV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总成本:"
+            android:layout_below="@id/total_amountV"
+            android:textSize="@dimen/item_font_size"
+            />
+        <TextView
+            android:id="@+id/total_cost"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/total_costV"
+            android:layout_below="@id/total_amountV"
+            />
+
+        <TextView
+            android:id="@+id/total_profitV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profit Ratio:"
+            android:textSize="@dimen/item_font_size"
+            android:layout_toRightOf="@id/total_cost"
+            android:layout_below="@id/total_amountV"
+            />
+
+        <TextView
+            android:id="@+id/total_profit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/total_profitV"
+            android:layout_below="@id/total_amountV"
+            />
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textSize="@dimen/button_font_size"
+            android:layout_below="@id/total_costV"
+            />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_finish_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易完成"
+            android:textSize="@dimen/button_font_size"
+            android:layout_below="@id/total_costV"
+            android:layout_toRightOf="@id/button_save"
+            android:layout_marginLeft="30dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

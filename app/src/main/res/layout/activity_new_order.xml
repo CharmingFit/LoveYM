@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.steven.loveym.NewOrder"
+    android:orientation="vertical">
+
+    <com.example.steven.loveym.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <Button
+                android:id="@+id/button_new_order_name"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/customer_name"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Telephone: "
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/customer_tel"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/customer_address"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Memo: "
+                android:textSize="@dimen/item_font_size"
+                />
+            <EditText
+                android:id="@+id/order_memo"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+    <ListView
+        android:id="@+id/order_new_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/button_add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Add item"
+        android:textSize="@dimen/button_font_size"
+        />
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/total_amountV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:textSize="@dimen/item_font_size"
+            />
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/total_amountV"
+            />
+
+        <TextView
+            android:id="@+id/total_weightV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight:"
+            android:textSize="@dimen/item_font_size"
+            android:layout_toRightOf="@id/total_amount"
+            />
+
+        <TextView
+            android:id="@+id/total_weight"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/total_weightV"
+            />
+
+
+        <TextView
+            android:id="@+id/total_costV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总成本:"
+            android:layout_below="@id/total_amountV"
+            android:textSize="@dimen/item_font_size"
+            />
+        <TextView
+            android:id="@+id/total_cost"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/total_costV"
+            android:layout_below="@id/total_amountV"
+            />
+
+        <TextView
+            android:id="@+id/total_profitV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profit Ratio:"
+            android:textSize="@dimen/item_font_size"
+            android:layout_toRightOf="@id/total_cost"
+            android:layout_below="@id/total_amountV"
+            />
+
+        <TextView
+            android:id="@+id/total_profit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/total_profitV"
+            android:layout_below="@id/total_amountV"
+            />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_new_order_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:textSize="@dimen/button_font_size"
+            android:layout_below="@id/total_costV"
+            />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/button_new_order_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="@dimen/button_font_size"
+            android:layout_below="@id/total_costV"
+            android:layout_toRightOf="@id/button_new_order_confirm"
+            android:layout_marginLeft="30dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_add_customer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.steven.loveym.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/name_new_customer"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Telephone:"
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/Tel_new_customer"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Address :"
+            android:textSize="@dimen/item_font_size"
+            />
+        <TextView
+            android:id="@+id/address_new_customer"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"
+
+            />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="WeChat Name :"
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/wechat_name_new_customer"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="WeChat ID :"
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/wechat_id_new_customer"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Resident ID :"
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/id_new_customer"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Memo :"
+                android:textSize="@dimen/item_font_size"
+                />
+            <TextView
+                android:id="@+id/memo_new_customer"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <Button
+            android:id="@+id/button_customer_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Delete"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/button_customer_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction History"
+            android:textAllCaps="false"
+            android:layout_above="@id/button_customer_delete"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

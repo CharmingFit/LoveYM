@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <Button
+        android:id="@+id/customers_button"
+        android:layout_width="@dimen/button_weight"
+        android:layout_height="wrap_content"
+        android:text="@string/Customers_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textAllCaps="false"
+        android:textSize="@dimen/button_font_size"
+        />
+
+    <Button
+        android:id="@+id/Orders_button"
+        android:layout_width="@dimen/button_weight"
+        android:layout_height="wrap_content"
+        android:text="@string/Orders_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/button_font_size"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/Inventory_button"
+        android:layout_width="@dimen/button_weight"
+        android:layout_height="wrap_content"
+        android:text="@string/Inventroy_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/button_font_size"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/Managemnt_button"
+        android:layout_width="@dimen/button_weight"
+        android:layout_height="wrap_content"
+        android:text="@string/Management_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/button_font_size"
+        android:textAllCaps="false"
+        />
+
+
+</LinearLayout>
